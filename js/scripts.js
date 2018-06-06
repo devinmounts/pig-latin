@@ -11,8 +11,11 @@ function pigLatin(string) {
   // }
 
   for(i = 0; i < vowels.length; i++) {
-    if(splitWord[0] == vowels[i]) {
-      alert("this is a vowel");
+    if (splitWord[0] === vowels[i]) {
+      var newWord = splitWord.splice(-1,0,"ay");
+      console.log(splitWord);
+      console.log(newWord);
+
     }
   }
 }
